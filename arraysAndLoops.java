@@ -78,8 +78,6 @@ int[] ages = {3, 9, 23, 64, 2, 8, 28, 93};
 		double[] anotherDoubleArr = {2.2, 3.3, 4.4, 5.5};
 		System.out.println("isFirstArrAvgGreater returns => " + isFirstArrAvgGreater(doubleArr, anotherDoubleArr));
 		
-		System.out.println("getAge() returns => " + getAge(1994));
-
 	}
 	
 	private static String duplicateWord(String word, int n) {
@@ -109,14 +107,6 @@ int[] ages = {3, 9, 23, 64, 2, 8, 28, 93};
 	
 	private static boolean isFirstArrAvgGreater(double[] firstArr, double[] secondArr) {
 		return getAverageOfDoubleArr(firstArr) > getAverageOfDoubleArr(secondArr); 
-	}
-	
-	
-	//getAge calculates a new user's age with the given birthYear
-
-	private static int getAge(int birthYear) {
-		return Year.now().getValue() - birthYear; 
-
 	}
 
 }
