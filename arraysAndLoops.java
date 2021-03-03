@@ -9,6 +9,11 @@ public class arraysAndLoops {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
+		int t = 15;
+		boolean isHotOutside = (t < 10.51);
+		double moneyInPocket = 10.51;
+		boolean willBuyDrink = true;
+		
 int[] ages = {3, 9, 23, 64, 2, 8, 28, 93};
 		
 		// Instructions are to get the difference of the first and last element.
@@ -100,11 +105,12 @@ int[] ages = {3, 9, 23, 64, 2, 8, 28, 93};
 		return Arrays.stream(arr).average().orElse(Double.NaN);
 	}
 	
-	private static boolean willBuyDrink(double isHotOutside, double moneyInPocket) {
-		if((isHotOutside > 10.50) && (moneyInPocket > 10.50)); {
-		return true; }
+	private static boolean willBuyDrink(boolean isHotOutside, double moneyInPocket) {
+		if((isHotOutside) && (moneyInPocket > 10.50)) {
+		return true;
 	}
-	
+		else return false; }
+
 	private static boolean isFirstArrAvgGreater(double[] firstArr, double[] secondArr) {
 		return getAverageOfDoubleArr(firstArr) > getAverageOfDoubleArr(secondArr); 
 	}
